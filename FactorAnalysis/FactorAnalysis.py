@@ -111,6 +111,7 @@ def Get_Eigens():
     if calculated:
         cont.empty()
         cont.dataframe(analyzer.get_eigenvalues())
+        st.line_chart(analyzer.get_eigenvalues()[0])
 
 def Get_Fvar():
     calculated = False
